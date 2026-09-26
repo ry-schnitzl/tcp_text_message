@@ -36,12 +36,12 @@ args check_arguments(int argc, char** argv) {
     // Check that we have the correct number of arguments
     if (argc < NUM_ARGS) {
         printf("Missing required arguments\n");
-        printf("Usage: tcp_text_message <type> <ip:port> <message>\n");
+        printf("Usage: tcp_text_message <type> <ip>:<port>\n");
         program.err = ERR_ARGS;
         return program;
     } else if (argc > NUM_ARGS) {
         printf("Too many arguments\n");
-        printf("Usage: tcp_text_message <type> <ip:port> <message>\n");
+        printf("Usage: tcp_text_message <type> <ip>:<port>\n");
         program.err = ERR_ARGS;
         return program;
     }
